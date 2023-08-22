@@ -48,6 +48,9 @@ color: #fff; cursor: pointer; border:none}
 @media only screen and (max-width:530px){
     #categories{max-width:350px;}
     #section-2 .category{width:150px; margin-left:20px}
+    #intro *{text-align: center;}
+    #intro h1{font-size:35px;}
+    #intro h2{font-size:25px;}
 }
 @media only screen and (max-width:370px){
     #categories{max-width:none; padding:2%}
