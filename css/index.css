@@ -25,7 +25,7 @@ float:left; cursor:pointer; height:250px}
 #trending-now-slider{overflow:hidden;}
 #trending-now .slider-control{font-size: 40px; padding: 0% 13px; border-radius: 25px; background: #fe8c29;
 color: #fff; cursor: pointer; border:none}
-#trending-now .item{width:200px; margin-left:10px; display:inline-block; cursor:pointer}
+#trending-now .item{width:200px; margin-left:10px; display:inline-block; cursor:pointer; max-width:100%}
 #trending-now .item img{width:100%;}
 
 #section-3 .heading{font-size:30px}
@@ -38,12 +38,15 @@ color: #fff; cursor: pointer; border:none}
     #intro{width:90%; margin:auto}
     #section-1-wrapper img{width:95%; margin:auto; display:block; margin-top:2%}
     #trending-now .slider-control{font-size:20px; padding:3px 10px}
+    #trending-now-slider{overflow:auto}
 }
 @media only screen and (max-width:1050px){
     #categories{max-width: 750px;}
 }
 @media only screen and (max-width:780px){
     #categories{max-width:500px}
+    #intro *{font-size:16px}
+    #section-2 .heading{font-size:16px}
 }
 @media only screen and (max-width:530px){
     #categories{max-width:350px;}
@@ -54,5 +57,7 @@ color: #fff; cursor: pointer; border:none}
 }
 @media only screen and (max-width:370px){
     #categories{max-width:none; padding:2%}
-    #section-2  .category{width:95%; margin:auto; margin-top:3%}
+    #section-2 .category{width:95%; margin:auto; margin-top:3%; float:none; height:auto}
+    #section-3 .flex{display:block}
+    #section-3 .flex .step{width:90%; margin:auto; margin-top:3%}
 }
