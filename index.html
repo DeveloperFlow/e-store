@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page for Ecommerce website</title>
+    <link rel="stylesheet" href="lib/css/literal.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="lib/js/basics.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body class="my-fonts">
+    <div id="main">
+        <div id="section-1" class="relative">
+            <div class="flex hfull vcenter apart minor-pad" id="section-1-wrapper">
+                <div id="intro">
+                    <h1 class="white">Welcome To This Ecommerce Store Demo,</h1>
+                    <h2>This is just a demo of what is really possible</h2>
+                    <h2>This Demo only focuses on design because it is hosted on github Although I developed and designed it</h2>
+                    <div class="space-up">I can design and develop 
+                        the real thing just for you if you would like that</div>
+                    <div class="space-up">
+                        <button class="minor-pad sa">Start Shopping</button>
+                    </div>
+                </div>
+                <img src="img/intro.jpg">
+            </div>
+        </div>
+        <div id="section-2">
+            <h1 class="center-text">
+                How Online <span class="webkit-bg-clip-text transparent site-grad">Shopping</span> Should Be Done
+            </h1>
+            <div class="heading minor-pad center-text">
+                If you like this web page and would like something like this, or if you perceive me as capable to
+                implement and develop your mind blowing idea into a real functional and wonderful website, then You can
+                DM me and I will be more than willing to work with you
+            </div>
+            <div id="categories">
+                <div class="center-text space-down"><a href="browse-categories" class="sa">Shop By Categories</a></div>
+                <div class="category my-shadow minor-pad sa">
+                    <img src="img/category/1.png">
+                    <label class="block">Electronics</label>
+                </div>
+                <div class="category my-shadow minor-pad sa">
+                    <img src="img/category/2.jpeg">
+                    <label class="block">Groceries</label>
+                </div>
+                <div class="category my-shadow minor-pad sa">
+                    <img src="img/category/3.jpeg">
+                    <label class="block">Gadgets</label>
+                </div>
+                <div class="category my-shadow minor-pad sa">
+                    <img src="img/category/4.jpeg">
+                    <label class="block">Clothing</label>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+            <div id="trending-now" class="minor-pad">
+                <div class="center-text space-down"><a href="trending" class="sa">Trending Now</a></div>
+                <div id="slider-container" class="relative">
+                    <div class="flex vcenter hcenter absolute top full-height left">
+                        <button class="slider-control" disabled id="left-slide">&lt;</button>
+                    </div>
+                    <div class="flex vcenter hcenter absolute top full-height right">
+                        <button class="slider-control" id="right-slide">&gt;</button>
+                    </div>
+                    <div id="trending-now-slider" class="oneline">
+                        <div class="item center-text sa">
+                            <img src="img/trending/1.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/2.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/3.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/4.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/5.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/6.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/7.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                        <div class="item center-text sa">
+                            <img src="img/trending/8.jpg">
+                            <div class="name">Item Name</div>
+                            <div class="price">Item Price</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-3">
+            <h1 class="webkit-bg-clip-text site-grad transparent center-text">How It All Works</h1>
+            <div class="minor-pad flex apart">
+                <div class="step sa">
+                    <img src="img/browse.jpg">
+                    <div>Browse through the numerous available products for your desired product</div>
+                </div>
+                <div class="step sa">
+                    <img src="img/checkout.jpg">
+                    <div>You pay for the product through our payment interface</div>
+                </div>
+                <div class="step sa">
+                    <img src="img/shipping.jpg">
+                    <div>We ship the products to you</div>
+                </div>
+            </div>
+            <div class="center-text space-down">
+                <span class="heading">Yes!, its really that simple</span>
+                <button class="button curved block auto-margin minor-pad sa">Start Shopping</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = iniActionBlock
+        function iniActionBlock(){
+            var actionElements = document.getElementsByClassName("sa")
+            for(var i = 0; i < actionElements.length; i++){
+                addBlockEvt(actionElements[i])
+            }
+            function addBlockEvt(element){
+                addEvent(element,"click",function(e){
+                    stopDefault(e)
+                    customAlert("This is just a demo so you cannot perform this action")
+                })
+            }
+        }
+    </script>
+</body>
+</html>

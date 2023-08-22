@@ -1,0 +1,55 @@
+.site-grad{background-image: linear-gradient(90deg,#fe8c29,#c8c8ff);}
+.button{border:1px solid #fe8c29; background-color: transparent;}
+*{color:#555}
+*:disabled{cursor: not-allowed !important; background-color: rgba(200,200,200,0.5) !important;}
+
+body{margin:0; padding:0}
+#section-1{background-image:url("../img/bg.jpg")}
+#section-1-wrapper{position:relative; background-color: rgba(254,140,41,0.8); padding:3%}
+#intro{width:50%}
+#intro *{color:#fff; font-size:20px; text-transform: capitalize;}
+#intro h1{font-size:50px; margin: 0;}
+#intro h2{font-size:30px; margin:0}
+#section-1 img{width:45%; height:auto;}
+#section-1 button{border:1px solid #fff; background-color: transparent; border-radius: 25px; cursor:pointer}
+
+#section-2 h1{color: #c8c8ff; -webkit-text-stroke:1px #fe8c29}
+#section-2 .heading{font-size: 20px; max-width: 500px; margin:auto; line-height: 30px;}
+
+#categories{max-width:1000px; margin:auto}
+#section-2 .category{width:230px; margin-left:20px; text-align: center; margin-bottom: 5%; border-radius: 8px;
+float:left; cursor:pointer; height:250px}
+#categories .category img{width:100%; margin:auto;}
+
+#trending-now{border-top:1px solid #fe8c29}
+#trending-now-slider{overflow:hidden;}
+#trending-now .slider-control{font-size: 40px; padding: 0% 13px; border-radius: 25px; background: #fe8c29;
+color: #fff; cursor: pointer; border:none}
+#trending-now .item{width:200px; margin-left:10px; display:inline-block; cursor:pointer}
+#trending-now .item img{width:100%;}
+
+#section-3 .heading{font-size:30px}
+#section-3 button{padding:1% 2%; cursor:pointer}
+#section-3 .step{text-align: center; width:30%}
+#section-3 .step img{max-height:200px; width:100%;}
+
+@media only screen and (max-width:700px){
+    #section-1-wrapper.flex{display:block}
+    #intro{width:90%; margin:auto}
+    #section-1-wrapper img{width:95%; margin:auto; display:block; margin-top:2%}
+    #trending-now .slider-control{font-size:20px; padding:3px 10px}
+}
+@media only screen and (max-width:1050px){
+    #categories{max-width: 750px;}
+}
+@media only screen and (max-width:780px){
+    #categories{max-width:500px}
+}
+@media only screen and (max-width:530px){
+    #categories{max-width:350px;}
+    #section-2 .category{width:150px; margin-left:20px}
+}
+@media only screen and (max-width:370px){
+    #categories{max-width:none; padding:2%}
+    #section-2  .category{width:95%; margin:auto; margin-top:3%}
+}
